@@ -2,7 +2,8 @@
     "name": "user/financebuddy",
      "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Core\\": "app/Core/"
         }
     },
     "authors": [
