@@ -65,7 +65,7 @@
                         <h3>Welcome Back to FinanceBuddy</h3>
                     </div>
                     <div class="card-body p-4">
-                        <form action="/financebuddy/login" method="POST">
+                        <form action="login" method="POST">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
@@ -76,11 +76,11 @@
                             </div>
 
                             <?php
-                                // session_start();
-                                if (isset($_SESSION['error'])) {
-                                    echo "<p style='color: red;'>" . $_SESSION['error'] . "</p>";
-                                }
-                                session_unset();
+                            // session_start();
+                            if (isset($_SESSION['error'])) {
+                                echo "<p style='color: red;'>" . $_SESSION['error'] . "</p>";
+                            }
+                            session_unset();
                             ?>
                             <div class="d-flex justify-content-between mb-3">
                                 <div>

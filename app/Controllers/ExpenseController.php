@@ -4,15 +4,24 @@ namespace App\Controllers;
 
 require_once __DIR__ . '/../Models/User.php';
 
+use Model\User;
+use Core\Request;
 use App\Models\Expense;
 use App\Validator\Validator;
-use Model\User;
 
 require_once __DIR__ . '/../Core/Database.php';
 
 class ExpenseController{
 
 
+
+    public function index(Request $request){
+        echo "This is the index method of ExpenseController";
+        die;
+        // echo "This is the index method of ExpenseController";
+        // die;
+        return view('expense/index');
+    }
     public function dashboard(){
         return view('expense/dashboard');
     }
